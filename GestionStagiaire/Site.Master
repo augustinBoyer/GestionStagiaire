@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TP2.Site" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body >
+
+    <asp:ContentPlaceHolder  ID="ContentPlaceHolder2" runat="server">
+
+        <form id="form2" runat="server" style="background-image: url('')">
+            <h1>MARLEY&#39;S</h1>
+            <p>
+                <asp:Label ID="lblNom" runat="server" Width="100px"></asp:Label>
+                <asp:LinkButton ID="lkbDeconnexion" runat="server" OnClick="lkbDeconnexion_Click" Width="100px" CausesValidation="False">Déconnexion</asp:LinkButton>
+                <asp:LinkButton ID="lkbMotDePasse" runat="server" OnClick="lkbMotDePasse_Click">Changer son mot de passe</asp:LinkButton>
+            </p>
+            <div id="  ">
+            </div>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+        </asp:ContentPlaceHolder>
+    
+</body>
+</html>
